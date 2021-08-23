@@ -1611,3 +1611,60 @@ System memory in use after: 242.4 MB.
 Unloading 146 unused Assets to reduce memory usage. Loaded Objects now: 4862.
 Total: 3.522700 ms (FindLiveObjects: 0.314200 ms CreateObjectMapping: 0.197500 ms MarkObjects: 1.843200 ms  DeleteObjects: 1.166700 ms)
 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003047 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.943 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4071 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 250.2 MB.
+System memory in use after: 246.9 MB.
+
+Unloading 58 unused Assets to reduce memory usage. Loaded Objects now: 4967.
+Total: 3.808700 ms (FindLiveObjects: 0.363900 ms CreateObjectMapping: 0.200100 ms MarkObjects: 1.959600 ms  DeleteObjects: 1.284000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 898.139432 seconds.
+  path: Assets/Action.wav
+  artifactKey: Guid(2202042aca4959842a8d2a8ba3e1e8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Action.wav using Guid(2202042aca4959842a8d2a8ba3e1e8ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb2ac8b4b94c83cff8ddfe9935d0515') in 0.041750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Untitled-1.png
+  artifactKey: Guid(c053f623441e4994f9d49a4cc7ad4bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Untitled-1.png using Guid(c053f623441e4994f9d49a4cc7ad4bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d4db83f9cc7d721ef3bbda1f9345270') in 0.029805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/Main.mixer
+  artifactKey: Guid(43455edb83d3b8f478a3607a6c9e3a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Main.mixer using Guid(43455edb83d3b8f478a3607a6c9e3a1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bfd1eb660103aeee6b90e0f3543c630') in 0.006105 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Mr.Blxck_consolidated.wav
+  artifactKey: Guid(e4bb28f6e4e986a48ad56c0c44130658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mr.Blxck_consolidated.wav using Guid(e4bb28f6e4e986a48ad56c0c44130658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4114ad4e92b950ec34b4ac04c813c99e') in 0.011785 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Readme.asset
+  artifactKey: Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Readme.asset using Guid(83c2ed844a8c74b779a4c823d16594b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223d76d395327ac4f4cf23ee35f0a184') in 0.006972 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

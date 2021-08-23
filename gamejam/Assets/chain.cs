@@ -24,27 +24,20 @@ public class chain : MonoBehaviour
         //update curve
         for (int i = 0; i < chains.Count; i++)
         {
-            float time = i * 1 / chains.Count;
+            float time = i * (1f / (chains.Count - 1f));
 
-            Keyframe XFrame = new Keyframe(time, chains[i].position.x);
-            XPos.AddKey(XFrame);
+            XPos.AddKey(time, chains[i].position.x);
 
-            Keyframe YFrame = new Keyframe(time, chains[i].position.y);
-            YPos.AddKey(YFrame);
+            YPos.AddKey(time, chains[i].position.y);
 
-            Keyframe ZFrame = new Keyframe(time, chains[i].position.z);
-            ZPos.AddKey(ZFrame);
+            ZPos.AddKey(time, chains[i].position.z);
         }
         
         //update positions
-        /*for (int i = 0; i < fake.Count; i++)
+        for (int i = 0; i < fake.Count; i++)
         {
-            float time = (1 / fake.Count) * i;
-            Vector3 POS = new Vector3(
-                XPos.Evaluate(time),
-                YPos.Evaluate(time),
-                ZPos.Evaluate(time));
-            fake[i].position = POS;
-        }*/
+            float _time = i * (1f / (fake.Count - 1f));
+            fake[i].position = new Vector3(XPos.Evaluate(_time), YPos.Evaluate(_time), ZPos.Evaluate(_time));
+        }
     }
 }

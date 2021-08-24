@@ -21,7 +21,6 @@ public class UIHandler : MonoBehaviour {
     private Transform placeSlot;
     private Transform replacingItem;
 
-    private bool linkedPlayer = false;
     private PlayerMover playerMover;
 
     [Header("Attack GameObject Text")]
@@ -33,16 +32,11 @@ public class UIHandler : MonoBehaviour {
 
     private void Start() {
         inventory.gameObject.SetActive(false);
-        linkedPlayer = LinkPlayer();
+        LinkPlayer();
         InitAttackUI();
     }
 
     private void Update() {
-        if (!linkedPlayer)
-        {
-            linkedPlayer = LinkPlayer();
-        }
-
         MoveItem();
         if (Input.GetKeyDown(inventoryKey)) {
             inventory.gameObject.SetActive(!inventory.gameObject.activeSelf);
@@ -156,7 +150,7 @@ public class UIHandler : MonoBehaviour {
 
     private bool LinkPlayer()
     {
-        playerMover = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMover>();
+        playerMover = PlayerManager.instance.player.GetComponent<PlayerMover>();
         if (playerMover != null)
         {
             playerMover.onAttackChanged += SwitchAttack;

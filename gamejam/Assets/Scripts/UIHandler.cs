@@ -21,7 +21,7 @@ public class UIHandler : MonoBehaviour {
     private Transform placeSlot;
     private Transform replacingItem;
 
-    private PlayerMover playerMover;
+    private PlayerController playerController;
 
     [Header("Attack GameObject Text")]
     [SerializeField] private TextMeshProUGUI meleeText = null;
@@ -150,10 +150,10 @@ public class UIHandler : MonoBehaviour {
 
     private bool LinkPlayer()
     {
-        playerMover = PlayerManager.instance.player.GetComponent<PlayerMover>();
-        if (playerMover != null)
+        playerController = PlayerManager.instance.player.GetComponent<PlayerController>();
+        if (playerController != null)
         {
-            playerMover.onAttackChanged += SwitchAttack;
+            playerController.onAttackChanged += SwitchAttack;
             return true;
         }
         return false;

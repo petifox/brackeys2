@@ -127,9 +127,4 @@ public class PlayerMover : MonoBehaviour {
     }
 }
 
-public enum AttackMode
-{
-    Melee,
-    Weapon,
-    Build
-}
+

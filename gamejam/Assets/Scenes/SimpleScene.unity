@@ -225,7 +225,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlaceholderPlayer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1414653451543185981, guid: f4b058825c355014682631c0b81a61dc, type: 3}
+    - {fileID: 1471042140, guid: f4b058825c355014682631c0b81a61dc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f4b058825c355014682631c0b81a61dc, type: 3}
 --- !u!1 &376784523
 GameObject:
@@ -513,6 +515,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8064c19fdfa6d5c46a6b48f2261d228b, type: 3}
+--- !u!4 &545570355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2628020958131060628, guid: f4b058825c355014682631c0b81a61dc, type: 3}
+  m_PrefabInstance: {fileID: 344937830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -616,6 +623,78 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1414653451543185959, guid: f4b058825c355014682631c0b81a61dc, type: 3}
   m_PrefabInstance: {fileID: 344937830}
   m_PrefabAsset: {fileID: 0}
+--- !u!143 &910335614
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910335613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &910335615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910335613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 106c6a6f11a0b9249abd30200c36a481, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontalInputName: Horizontal
+  verticalInputName: Vertical
+  sprintKey: 304
+  jumpKey: 32
+  useKey: 101
+  pauseKey: 27
+  meleeAttack: 49
+  weaponAttack: 50
+  buildAttack: 51
+  walkSpeed: 5
+  runSpeed: 10
+  runBuildUpSpeed: 7
+  slopeForce: 50
+  slopeForceRayLength: 10
+  jumpFalloff:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  jumpMultiplier: 1
+  gravity: 10
+  placeholderBuilding: {fileID: 6452315327933337887, guid: 5d3e91bb77226e643a787a0a524593bb, type: 3}
+  placePosition: {fileID: 545570355}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

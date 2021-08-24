@@ -36,6 +36,10 @@ public class PlayerMover : MonoBehaviour {
         RotatePlayer();
         MovePlayer();
         TestSprint();
+    }
+
+    private void LateUpdate()
+    {
         UpdateCamera();
     }
 

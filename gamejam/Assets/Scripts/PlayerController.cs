@@ -106,41 +106,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void PlayerMovement2()
-    {
-        JumpInput2();
-        float verticalInput = Input.GetAxis(verticalInputName);
-        float horizontalInput = Input.GetAxis(horizontalInputName);
-
-        Vector3 forwardMovement = transform.forward * verticalInput;
-        Vector3 rightMovement = transform.right * horizontalInput;
-
-        // Apply gravity
-        playerVelocity.y -= gravity * Time.deltaTime;
-
-        controller.SimpleMove(Vector3.ClampMagnitude(forwardMovement + rightMovement, 1.0f) * movementSpeed);
-        if ((verticalInput != 0 || horizontalInput != 0) && OnSlope())
-        {
-            playerVelocity += Vector3.down * controller.height / 2 * slopeForce * Time.deltaTime;
-        }
-
-        Vector3 adjustedMoveVector = (Vector3.ClampMagnitude(forwardMovement + rightMovement, 1.0f) * movementSpeed + playerVelocity) * Time.deltaTime;
-        controller.Move(adjustedMoveVector);
-
-        SetMovementSpeed();
-
-        //Prevent Jitter
-        if (isJumping && !controller.isGrounded)
-        {
-            controller.slopeLimit = 90f;
-        }
-        else
-        {
-            isJumping = false;
-            controller.slopeLimit = 45f;
-        }
-    }
-
     private void AdjustGravity()
     {
         if (controller.isGrounded && playerVelocity.y <= 0f)

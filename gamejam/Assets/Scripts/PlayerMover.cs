@@ -84,7 +84,7 @@ public class PlayerMover : MonoBehaviour {
 
         if (keyPressed)
         {
-            onAttackChanged.Invoke(attackMode);
+            onAttackChanged?.Invoke(attackMode);
         }
     }
 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using System;
+using TMPro;
 public class UIHandler : MonoBehaviour {
     public Canvas canvas;
 
@@ -19,11 +20,29 @@ public class UIHandler : MonoBehaviour {
     private Transform takeSlot;
     private Transform placeSlot;
     private Transform replacingItem;
+
+    private bool linkedPlayer = false;
+    private PlayerMover playerMover;
+
+    [Header("Attack GameObject Text")]
+    [SerializeField] private TextMeshProUGUI meleeText = null;
+    [SerializeField] private TextMeshProUGUI weaponText = null;
+    [SerializeField] private TextMeshProUGUI buildText = null;
+    [SerializeField] private AttackMode defaultAttack = AttackMode.Melee;
+    private TextMeshProUGUI activeObject = null;
+
     private void Start() {
         inventory.gameObject.SetActive(false);
+        linkedPlayer = LinkPlayer();
+        InitAttackUI();
     }
 
     private void Update() {
+        if (!linkedPlayer)
+        {
+            linkedPlayer = LinkPlayer();
+        }
+
         MoveItem();
         if (Input.GetKeyDown(inventoryKey)) {
             inventory.gameObject.SetActive(!inventory.gameObject.activeSelf);
@@ -133,5 +152,57 @@ public class UIHandler : MonoBehaviour {
             takeSlot = null;
             placeSlot = null;
         }
+    }
+
+    private bool LinkPlayer()
+    {
+        playerMover = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMover>();
+        if (playerMover != null)
+        {
+            playerMover.onAttackChanged += SwitchAttack;
+            return true;
+        }
+        return false;
+    }
+
+    private void InitAttackUI()
+    {
+        Color textColor = meleeText.color;
+        textColor.a = 0.5f;
+        meleeText.color = textColor;
+        weaponText.color = textColor;
+        buildText.color = textColor;
+
+        SwitchAttack(defaultAttack);
+    }
+
+    private void SwitchAttack(AttackMode mode)
+    {
+        Color currentColor;
+
+        if (activeObject != null)
+        {
+            currentColor = activeObject.color;
+            currentColor.a = 0.5f;
+            activeObject.color = currentColor;
+        }
+
+        switch (mode)
+        {
+            case AttackMode.Melee:
+                activeObject = meleeText;
+                break;
+            case AttackMode.Weapon:
+                activeObject = weaponText;
+                break;
+            case AttackMode.Build:
+                activeObject = buildText;
+                break;
+        }
+
+        currentColor = activeObject.color;
+        currentColor.a = 1.0f;
+        activeObject.color = currentColor;
+
     }
 }

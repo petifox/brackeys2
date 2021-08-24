@@ -1,79 +1,398 @@
 Using pre-set license
 Built from '2021.1/staging' branch; Version is '2021.1.5f1 (3737af19df53) revision 3618735'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Pro; OS build 19043.1110; Version 2009; 64bit' Language: 'en' Physical Memory: 16308 MB
+OS: 'Windows 10 Pro; OS build 19042.1165; Version 2009; 64bit' Language: 'en' Physical Memory: 16196 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-D:\Files\UnityProjects\2021.1.5f1\Editor\Unity.exe
+C:\Program Files\editors_folder\2021.1.5f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/User/Documents/GitHub/brackeys2/gamejam
+C:/Users/peti/Documents/GitHub/brackeys2/gamejam
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60147
-Successfully changed project path to: C:/Users/User/Documents/GitHub/brackeys2/gamejam
-C:/Users/User/Documents/GitHub/brackeys2/gamejam
+61495
+Successfully changed project path to: C:/Users/peti/Documents/GitHub/brackeys2/gamejam
+C:/Users/peti/Documents/GitHub/brackeys2/gamejam
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 105.88 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 100.84 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.5f1 (3737af19df53)
-[Subsystems] Discovering subsystems at path D:/Files/UnityProjects/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/User/Documents/GitHub/brackeys2/gamejam/Assets
+[Subsystems] Discovering subsystems at path C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/peti/Documents/GitHub/brackeys2/gamejam/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f11)
     Vendor:   NVIDIA
-    VRAM:     2988 MB
-    Driver:   30.0.14.7141
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+    VRAM:     5980 MB
+    Driver:   27.21.14.6663
 Initialize mono
-Mono path[0] = 'D:/Files/UnityProjects/2021.1.5f1/Editor/Data/Managed'
-Mono path[1] = 'D:/Files/UnityProjects/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'D:/Files/UnityProjects/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Mono path[0] = 'C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56580
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: D:/Files/UnityProjects/2021.1.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: D:/Files/UnityProjects/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002304 seconds.
+Register platform support module: C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
+Register platform support module: C:/Program Files/editors_folder/2021.1.5f1/Editor/Data/PlaybackEngines/LuminSupport/UnityEditor.Lumin.Extensions.dll
+Registered in 0.003373 seconds.
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 116.65 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 102.25 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.733 seconds
+- Completed reload, in  1.820 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004461 seconds.
+Registered in 0.003240 seconds.
 Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 119.54 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 103.34 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.313 seconds
+- Completed reload, in  1.117 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
-Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4147 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 163.4 MB.
-System memory in use after: 163.6 MB.
+System memory in use before: 163.1 MB.
+System memory in use after: 160.7 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 4601.
-Total: 2.746000 ms (FindLiveObjects: 0.364000 ms CreateObjectMapping: 0.100600 ms MarkObjects: 2.202000 ms  DeleteObjects: 0.077900 ms)
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 4571.
+Total: 3.078600 ms (FindLiveObjects: 0.277200 ms CreateObjectMapping: 0.194700 ms MarkObjects: 1.694700 ms  DeleteObjects: 0.911000 ms)
 
 ========================================================================
 Received Import Request.
+  path: Assets/Tree01Resources/LeaveRender01.png
+  artifactKey: Guid(2b0f40b4a80228244b7bbe99d0f2b322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree01Resources/LeaveRender01.png using Guid(2b0f40b4a80228244b7bbe99d0f2b322) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f1b3089eb5ab8069adcabe918adb65') in 0.061096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
   path: Assets/Tree01Resources
   artifactKey: Guid(8d9e0f954ec7aa84b8dddac6e38d4724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Tree01Resources using Guid(8d9e0f954ec7aa84b8dddac6e38d4724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57eeeb1d6b056756847c2f23bb705bb8') in 0.009024 seconds 
+Start importing Assets/Tree01Resources using Guid(8d9e0f954ec7aa84b8dddac6e38d4724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4f1c2e0837d0ec29eb9187fabd9ab31') in 0.004959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/Tree01Resources/Tree01.fbx
+  artifactKey: Guid(143fa0daa2b1ddb4b93a4c2de63e86d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree01Resources/Tree01.fbx using Guid(143fa0daa2b1ddb4b93a4c2de63e86d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bccd48b52c72085254be70af40cc33cd') in 0.817619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000163 seconds.
+  path: Assets/Tree01Resources/Trunk01.mat
+  artifactKey: Guid(aff2fdc7fcf7bc04dac202bdeb4a3845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree01Resources/Trunk01.mat using Guid(aff2fdc7fcf7bc04dac202bdeb4a3845) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '724d835ca56ea3dd0119ed71cdb9282c') in 0.265385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/Tree01Resources/Tree01.prefab
+  artifactKey: Guid(cecee14d3ac93e6418d2934be2468dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree01Resources/Tree01.prefab using Guid(cecee14d3ac93e6418d2934be2468dc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b14b89c675d192dc58a64b5867405b44') in 0.618338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Tree02Resources
+  artifactKey: Guid(8ffff56697f9a0641a4e00bf691a8e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree02Resources using Guid(8ffff56697f9a0641a4e00bf691a8e23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9b836d5cc92b317728499de1ba4a676') in 0.005124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Tree01Resources/Leaves01.mat
+  artifactKey: Guid(b97c0b9e914ed734da64307fdb42877c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tree01Resources/Leaves01.mat using Guid(b97c0b9e914ed734da64307fdb42877c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '515f66c1536c4264f3eea4452c97c353') in 0.013467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.264870 seconds.
+  path: Assets/Scenes/NormaProjectStuff.unity
+  artifactKey: Guid(519976fd588af38489967a18d3931a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NormaProjectStuff.unity using Guid(519976fd588af38489967a18d3931a30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf94cc5371436c92636e728abf7e907') in 0.005723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.132346 seconds.
+  path: Assets/Scenes/controller.unity
+  artifactKey: Guid(cd5570b106c33684cb59b0757847cce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/controller.unity using Guid(cd5570b106c33684cb59b0757847cce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2cde161ce3c9180bad82eb72f24abf') in 0.008482 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003108 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.958 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4061 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.3 MB.
+System memory in use after: 177.8 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 4675.
+Total: 3.105700 ms (FindLiveObjects: 0.286600 ms CreateObjectMapping: 0.201200 ms MarkObjects: 1.728600 ms  DeleteObjects: 0.888400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.487990 seconds.
+  path: Assets/Scenes/GAME.unity
+  artifactKey: Guid(2d00e28763f5b344c8b115a0682ac800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GAME.unity using Guid(2d00e28763f5b344c8b115a0682ac800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e924de5b8a90172340c6b21a56d6b0c7') in 0.016466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 246.676234 seconds.
+  path: Assets/Menu.cs
+  artifactKey: Guid(4e815128c1dff5146ac2a1960c92ba13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Menu.cs using Guid(4e815128c1dff5146ac2a1960c92ba13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34088c73908c1f8a056aea4feca316ca') in 0.007484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.733939 seconds.
+  path: Assets/chainV2.cs
+  artifactKey: Guid(3aabdd8d58e3d2f4c8e7f1eb847ecee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/chainV2.cs using Guid(3aabdd8d58e3d2f4c8e7f1eb847ecee1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35083b672af6a41cba0a70d0c2c59a42') in 0.005960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.617821 seconds.
+  path: Assets/chain.cs
+  artifactKey: Guid(377d11e82ae13944588e70ed6bb50f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/chain.cs using Guid(377d11e82ae13944588e70ed6bb50f50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac9f79de635c92197087810ba609d679') in 0.005881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.669890 seconds.
+  path: Assets/MenuManager.cs
+  artifactKey: Guid(9bf2f15b998653a46a2675aa05df6556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MenuManager.cs using Guid(9bf2f15b998653a46a2675aa05df6556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4bf895abb219cdee9892747fb2da85') in 0.005926 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003148 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.021 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4058 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.1 MB.
+System memory in use after: 177.7 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 4678.
+Total: 3.243900 ms (FindLiveObjects: 0.282000 ms CreateObjectMapping: 0.182900 ms MarkObjects: 1.843200 ms  DeleteObjects: 0.935000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 598.639006 seconds.
+  path: Assets/Scripts/SimpleCameraController.cs
+  artifactKey: Guid(be76e5f14cfee674cb30b491fb72b09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/SimpleCameraController.cs using Guid(be76e5f14cfee674cb30b491fb72b09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a794941a15252fee7bf727492298bd') in 0.011774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 303.036129 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Decoration/DottedRoundedRect.psd
+  artifactKey: Guid(2b4a1682166e4434e8ee7c6f47115b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Decoration/DottedRoundedRect.psd using Guid(2b4a1682166e4434e8ee7c6f47115b43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e6e18d197c035864fd7b16ca36acc1d') in 0.060339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/SF UI/SF Button.psd
+  artifactKey: Guid(9a32a6cc2cb803443983d45d4a513506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/SF UI/SF Button.psd using Guid(9a32a6cc2cb803443983d45d4a513506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92e5c073c4bc05fd9c986852150e240') in 0.017771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/SF UI/SF Generic.psd
+  artifactKey: Guid(1f1d5baae1d26404a8a639a07e5c7766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/SF UI/SF Generic.psd using Guid(1f1d5baae1d26404a8a639a07e5c7766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2277f5115eee071c6e877d09fefee37') in 0.016186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/SF UI/SF Title.psd
+  artifactKey: Guid(966be606197166640a108ef53355eddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/SF UI/SF Title.psd using Guid(966be606197166640a108ef53355eddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660040bbf3e25ca3d2076531460eef58') in 0.015538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/SF UI/SF Window.psd
+  artifactKey: Guid(6858abb4516aae344881bf286b3aac33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/SF UI/SF Window.psd using Guid(6858abb4516aae344881bf286b3aac33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00b895aba0b3476f1cc758f027b6e24') in 0.018838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000140 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/SF UI/Background/SF Background.png
+  artifactKey: Guid(39939fe0b3df2b741aca15c2accaf90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/SF UI/Background/SF Background.png using Guid(39939fe0b3df2b741aca15c2accaf90a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03e24ad1961682dd3adc464d5424689') in 0.035926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000157 seconds.
+  path: Assets/NaughtyAttributes/Samples/DemoScene/TestAssets/icon-github.png
+  artifactKey: Guid(005888ede18a58e4db8d069cfa3007cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaughtyAttributes/Samples/DemoScene/TestAssets/icon-github.png using Guid(005888ede18a58e4db8d069cfa3007cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab72564bab2a936c70b8bfa8bb3753d9') in 0.018177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Decoration/Icon2.png
+  artifactKey: Guid(fccea209f9ea7b1488225287813f4e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Decoration/Icon2.png using Guid(fccea209f9ea7b1488225287813f4e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f062993b83ac32abf78f3b053fd7b678') in 0.019481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000146 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Decoration/Icon3.png
+  artifactKey: Guid(e484876f0cfbe8d46981ae0062b5e77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Decoration/Icon3.png using Guid(e484876f0cfbe8d46981ae0062b5e77f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0dffa772f300d0ea401040e2dae5f5') in 0.019380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Decoration/Icon1.png
+  artifactKey: Guid(be0d6a45537a1a64e9e6c4ce47a2d58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Decoration/Icon1.png using Guid(be0d6a45537a1a64e9e6c4ce47a2d58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd08eca7a2d95937fd204c19ddc242959') in 0.023670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.101688 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Rounded UI/UIButtonCorner.png
+  artifactKey: Guid(f4c899d39b015484a9b4e5464802e401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Rounded UI/UIButtonCorner.png using Guid(f4c899d39b015484a9b4e5464802e401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '169908256e5ae52600a45852a3c997eb') in 0.016434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Rounded UI/UIPanel.png
+  artifactKey: Guid(935962ddb1e44499dad00e5ca6b38823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Rounded UI/UIPanel.png using Guid(935962ddb1e44499dad00e5ca6b38823) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8b5e628d80db24871598a26cc3bd4d4') in 0.016772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Rounded UI/UIButtonDefault.png
+  artifactKey: Guid(967c7b47090d34cf090c40749e45f0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Rounded UI/UIButtonDefault.png using Guid(967c7b47090d34cf090c40749e45f0b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '265f940884389aa20e0f53534750008c') in 0.018377 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 112.043805 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Rounded UI/UIToggleButton.png
+  artifactKey: Guid(1238f32bb27c642c5b81174a099459f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Rounded UI/UIToggleButton.png using Guid(1238f32bb27c642c5b81174a099459f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ae000ad0ea0d9ec2f296e5b92ca2ee') in 0.014701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Unity UI Samples/Textures and Sprites/Decoration/Unity Logo Unlit.psd
+  artifactKey: Guid(1182605a67e89c34996a4dff4126aa0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Unity UI Samples/Textures and Sprites/Decoration/Unity Logo Unlit.psd using Guid(1182605a67e89c34996a4dff4126aa0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ed508aabce902e197cfa30e9f9e1ea') in 0.017360 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003194 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.974 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4073 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 193.0 MB.
+System memory in use after: 190.6 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 4925.
+Total: 6.200900 ms (FindLiveObjects: 0.335200 ms CreateObjectMapping: 0.229400 ms MarkObjects: 3.779700 ms  DeleteObjects: 1.854500 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003067 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.938 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4058 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.4 MB.
+System memory in use after: 190.0 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 4928.
+Total: 3.618100 ms (FindLiveObjects: 0.303600 ms CreateObjectMapping: 0.202000 ms MarkObjects: 2.088200 ms  DeleteObjects: 1.023500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2076.937123 seconds.
+  path: Assets/Scripts/PlayerMover.cs
+  artifactKey: Guid(62c8e458bc7e9834f8164111f94c2974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMover.cs using Guid(62c8e458bc7e9834f8164111f94c2974) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1cb4d8491787b7ca5fe6f032e361649') in 0.014318 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004679 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for Lumin target not found
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.060 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4058 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 192.4 MB.
+System memory in use after: 190.0 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 4931.
+Total: 3.347500 ms (FindLiveObjects: 0.324600 ms CreateObjectMapping: 0.216300 ms MarkObjects: 1.834000 ms  DeleteObjects: 0.971000 ms)
+

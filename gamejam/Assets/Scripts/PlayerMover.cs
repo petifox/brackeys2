@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,14 +15,19 @@ public class PlayerMover : MonoBehaviour {
 
     public Transform placePnt;
 
-    private int attackMode = 1;
+    private AttackMode attackMode = AttackMode.Melee;
 
     private Rigidbody rb;
 
     private bool sprinting = false;
 
+    private Camera mainCamera = null;
+
+    public event Action<AttackMode> onAttackChanged;
+
     private void Start() {
         rb = GetComponent<Rigidbody>();
+        mainCamera = Camera.main;
     }
 
     private void Update() {
@@ -30,6 +36,7 @@ public class PlayerMover : MonoBehaviour {
         RotatePlayer();
         MovePlayer();
         TestSprint();
+        UpdateCamera();
     }
 
     private void MovePlayer() {
@@ -56,23 +63,40 @@ public class PlayerMover : MonoBehaviour {
     }
 
     private void TestNewMode() {
+        bool keyPressed = true;
         if (Input.GetKeyDown(KeyCode.Alpha1)) {
-            attackMode = 1;
+            attackMode = AttackMode.Melee;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2)) {
-            attackMode = 2;
+            attackMode = AttackMode.Weapon;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3)) {
-            attackMode = 3;
+            attackMode = AttackMode.Build;
+        }
+        else
+        {
+            keyPressed = false;
+        }
+
+        if (keyPressed)
+        {
+            onAttackChanged.Invoke(attackMode);
         }
     }
 
     private void MouseClicks() {
-        if (attackMode == 2 && Input.GetMouseButtonDown(0)) {
-            
-        }
-        if (attackMode == 3 && Input.GetMouseButtonDown(0)) {
-            PlaceBuilding();
+        if(Input.GetMouseButtonDown(0))
+        {
+            switch (attackMode)
+            {
+                case AttackMode.Melee:
+                    break;
+                case AttackMode.Weapon:
+                    break;
+                case AttackMode.Build:
+                    PlaceBuilding();
+                    break;
+            }
         }
     }
 
@@ -92,4 +116,16 @@ public class PlayerMover : MonoBehaviour {
             sprinting = false;
         }
     }
+
+    private void UpdateCamera()
+    {
+        mainCamera.transform.position = new Vector3(this.transform.position.x, mainCamera.transform.position.y, this.transform.position.z);
+    }
+}
+
+public enum AttackMode
+{
+    Melee,
+    Weapon,
+    Build
 }

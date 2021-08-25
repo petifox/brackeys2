@@ -38,4 +38,7 @@ sysinfo.txt
 
 # Logs
 gamejam/[Ll]ogs/
+<<<<<<< HEAD
 gamejam/UserSettings/EditorUserSettings.asset
+=======
+>>>>>>> 52044b54c14c975571c1d04647d437a1b127e917

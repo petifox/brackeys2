@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1414653451543185955}
   - component: {fileID: 1414653451543185954}
   - component: {fileID: 1414653451543185953}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   - component: {fileID: 1947223094295862312}
   - component: {fileID: 910335614}
@@ -20,6 +21,11 @@ GameObject:
   - component: {fileID: 1947223094295862312}
   - component: {fileID: 1471042140}
 >>>>>>> Stashed changes
+=======
+  - component: {fileID: 1947223094295862312}
+  - component: {fileID: 910335614}
+  - component: {fileID: 910335615}
+>>>>>>> 52044b54c14c975571c1d04647d437a1b127e917
   m_Layer: 0
   m_Name: PlaceholderPlayer
   m_TagString: Player
@@ -92,7 +98,10 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 52044b54c14c975571c1d04647d437a1b127e917
 --- !u!65 &1947223094295862312
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -108,10 +117,13 @@ BoxCollider:
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &910335614
 CharacterController:
+<<<<<<< HEAD
 =======
 --- !u!54 &1414653451543185981
 Rigidbody:
 >>>>>>> Stashed changes
+=======
+>>>>>>> 52044b54c14c975571c1d04647d437a1b127e917
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -136,7 +148,10 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414653451543185959}
   m_Enabled: 1
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 52044b54c14c975571c1d04647d437a1b127e917
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 106c6a6f11a0b9249abd30200c36a481, type: 3}
   m_Name: 
@@ -183,6 +198,7 @@ MonoBehaviour:
   gravity: 10
   placeholderBuilding: {fileID: 6452315327933337887, guid: 5d3e91bb77226e643a787a0a524593bb, type: 3}
   placePosition: {fileID: 2628020958131060628}
+<<<<<<< HEAD
 =======
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -204,6 +220,8 @@ MonoBehaviour:
   placeholderBuilding: {fileID: 6452315327933337887, guid: 5d3e91bb77226e643a787a0a524593bb, type: 3}
   placePnt: {fileID: 2628020958131060628}
 >>>>>>> Stashed changes
+=======
+>>>>>>> 52044b54c14c975571c1d04647d437a1b127e917
 --- !u!1 &7767780941238758067
 GameObject:
   m_ObjectHideFlags: 0

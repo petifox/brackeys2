@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5670749274342803506}
   - component: {fileID: 8727228404795885463}
   - component: {fileID: 6843677817270317917}
+  - component: {fileID: -7850086982087772103}
+  - component: {fileID: 5698895115690860465}
   m_Layer: 0
   m_Name: Rock02
   m_TagString: Untagged
@@ -51,6 +53,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -81,3 +84,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-7850086982087772103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042163267874689672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f0330c8419581b429a332544068e891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDestruct:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!135 &5698895115690860465
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5042163267874689672}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.44
+  m_Center: {x: -0.0031882972, y: 0.0780879, z: 0.15808627}

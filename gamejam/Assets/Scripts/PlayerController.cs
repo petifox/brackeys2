@@ -13,8 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private KeyCode useKey = KeyCode.E;
     [SerializeField] private KeyCode pauseKey = KeyCode.Escape;
     [SerializeField] private KeyCode meleeAttack = KeyCode.Alpha1;
-    [SerializeField] private KeyCode weaponAttack = KeyCode.Alpha2;
-    [SerializeField] private KeyCode buildAttack = KeyCode.Alpha3;
+    [SerializeField] private KeyCode buildAttack = KeyCode.Alpha2;
     private float movementSpeed;
 
     [Header("Movement Settings")]
@@ -44,11 +43,18 @@ public class PlayerController : MonoBehaviour
     private Camera mainCamera = null;
     public event Action<AttackMode> onAttackChanged;
 
+    private GameObject weapon;
+    [SerializeField] private float attackDuration = 0.5f;
+    private float timePassed;
+    private bool isAttacking = false;
+
 
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
         mainCamera = Camera.main;
+        weapon = GetComponentInChildren<sword>().gameObject;
+        weapon.SetActive(false);
     }
 
     // Update is called once per frame
@@ -176,10 +182,6 @@ public class PlayerController : MonoBehaviour
         {
             attackMode = AttackMode.Melee;
         }
-        else if (Input.GetKeyDown(weaponAttack))
-        {
-            attackMode = AttackMode.Weapon;
-        }
         else if (Input.GetKeyDown(buildAttack))
         {
             attackMode = AttackMode.Build;
@@ -193,6 +195,13 @@ public class PlayerController : MonoBehaviour
         {
             onAttackChanged?.Invoke(attackMode);
         }
+
+        timePassed += Time.deltaTime;
+        if (timePassed  > attackDuration)
+        {
+            isAttacking = false;
+            weapon.SetActive(false);
+        }
     }
 
     private void HandleAttack()
@@ -202,6 +211,7 @@ public class PlayerController : MonoBehaviour
             switch (attackMode)
             {
                 case AttackMode.Melee:
+                    Attack();
                     break;
                 case AttackMode.Weapon:
                     break;
@@ -219,6 +229,16 @@ public class PlayerController : MonoBehaviour
 
     private void HandlePause()
     {
+    }
+
+    private void Attack()
+    {
+        if (!isAttacking)
+        {
+            isAttacking = true;
+            weapon.SetActive(true);
+            timePassed = 0;
+        }
     }
 
     #region Camera Methods

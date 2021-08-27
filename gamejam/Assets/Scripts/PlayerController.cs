@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [HideInInspector] public static PlayerController instance;
+
     [Header("Input Settings")]
     [SerializeField] private string horizontalInputName = "Horizontal";
     [SerializeField] private string verticalInputName = "Vertical";
@@ -13,8 +15,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private KeyCode useKey = KeyCode.E;
     [SerializeField] private KeyCode pauseKey = KeyCode.Escape;
     [SerializeField] private KeyCode meleeAttack = KeyCode.Alpha1;
-    [SerializeField] private KeyCode weaponAttack = KeyCode.Alpha2;
-    [SerializeField] private KeyCode buildAttack = KeyCode.Alpha3;
+    [SerializeField] private KeyCode buildAttack = KeyCode.Alpha2;
     private float movementSpeed;
 
     [Header("Movement Settings")]
@@ -44,16 +45,30 @@ public class PlayerController : MonoBehaviour
     private Camera mainCamera = null;
     public event Action<AttackMode> onAttackChanged;
 
+    private GameObject weapon;
+    [SerializeField] private float attackDuration = 0.5f;
+    private float timePassed;
+    private bool isAttacking = false;
+
+    public int cost;
+    public bool isStoped;
+
 
     private void Awake()
     {
+        instance = this;
         controller = GetComponent<CharacterController>();
         mainCamera = Camera.main;
+        weapon = GetComponentInChildren<sword>().gameObject;
+        weapon.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isStoped)
+            return;
+
         AdjustGravity();
         HandlePause();
         if (isPaused)
@@ -64,6 +79,7 @@ public class PlayerController : MonoBehaviour
         RotatePlayer();
         HandleAttackMode();
         HandleAttack();
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
     }
 
     private void LateUpdate()
@@ -174,11 +190,7 @@ public class PlayerController : MonoBehaviour
         bool keyPressed = true;
         if (Input.GetKeyDown(meleeAttack))
         {
-            attackMode = AttackMode.Melee;
-        }
-        else if (Input.GetKeyDown(weaponAttack))
-        {
-            attackMode = AttackMode.Weapon;
+            attackMode = AttackMode.Build;
         }
         else if (Input.GetKeyDown(buildAttack))
         {
@@ -186,12 +198,20 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            attackMode = AttackMode.Build;
             keyPressed = false;
         }
 
         if (keyPressed)
         {
             onAttackChanged?.Invoke(attackMode);
+        }
+
+        timePassed += Time.deltaTime;
+        if (timePassed  > attackDuration)
+        {
+            isAttacking = false;
+            weapon.SetActive(false);
         }
     }
 
@@ -202,6 +222,7 @@ public class PlayerController : MonoBehaviour
             switch (attackMode)
             {
                 case AttackMode.Melee:
+                    Attack();
                     break;
                 case AttackMode.Weapon:
                     break;
@@ -214,11 +235,29 @@ public class PlayerController : MonoBehaviour
 
     private void PlaceBuilding()
     {
-        Instantiate(placeholderBuilding, placePosition.position, Quaternion.identity);
+        if(ResourceCounter.instance.CheckAmount() >= cost)
+        {
+            ResourceCounter.instance.Remove(cost);
+            Instantiate(placeholderBuilding, placePosition.position, Quaternion.identity);
+        }
+        else
+        {
+            fade.instance.Notify();
+        }
     }
 
     private void HandlePause()
     {
+    }
+
+    private void Attack()
+    {
+        if (!isAttacking)
+        {
+            isAttacking = true;
+            weapon.SetActive(true);
+            timePassed = 0;
+        }
     }
 
     #region Camera Methods

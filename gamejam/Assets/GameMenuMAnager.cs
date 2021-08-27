@@ -22,12 +22,14 @@ public class GameMenuMAnager : MonoBehaviour
 
     public void PauseGame()
     {
+        PlayerController.instance.isStoped = true;
         pauseMenuObject.SetActive(true);
         Time.timeScale = 0f;
     }
 
     public void ResumeGame()
     {
+        PlayerController.instance.isStoped = false;
         pauseMenuObject.SetActive(false);
         Time.timeScale = 1f;
     }

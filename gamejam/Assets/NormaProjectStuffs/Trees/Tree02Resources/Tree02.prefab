@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 5992614682214399221}
   - component: {fileID: 8062113594686110899}
   - component: {fileID: 1823179618997450229}
+  - component: {fileID: 4318777443457448829}
   m_Layer: 0
   m_Name: Tree02
   m_TagString: Untagged
@@ -281,6 +282,7 @@ MonoBehaviour:
   onDestruct:
     m_PersistentCalls:
       m_Calls: []
+  amountToAdd: 1
 --- !u!136 &1823179618997450229
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -295,6 +297,22 @@ CapsuleCollider:
   m_Height: 23.962202
   m_Direction: 1
   m_Center: {x: 0, y: 11.481099, z: 5.487588}
+--- !u!208 &4318777443457448829
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137553777425451856}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 7.604913, y: 11.9811, z: 7.604913}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 11.4811, z: 5.487588}
+  m_TimeToStationary: 0.5
 --- !u!1 &2972049482909319042
 GameObject:
   m_ObjectHideFlags: 0

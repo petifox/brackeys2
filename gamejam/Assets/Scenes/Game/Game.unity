@@ -673,6 +673,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _slider: {fileID: 1815408214}
   MinMaxHealth: {x: 0, y: 100}
+  _volumeParameter: CutOff
+  _mixer: {fileID: 24100000, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  multiplyer:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.0011405945
+      value: 0
+      inSlope: 0.66609895
+      outSlope: 0.66609895
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.5417147
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 3.7832782
+      outSlope: 3.7832782
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.02057139
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  MinMaxHZ: {x: 200, y: 22000}
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -791,6 +818,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 58558065, guid: 3632ce385c84aa94a9a4eac4f39e5758, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 303981073, guid: 3632ce385c84aa94a9a4eac4f39e5758, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -798,6 +829,10 @@ PrefabInstance:
     - target: {fileID: 303981073, guid: 3632ce385c84aa94a9a4eac4f39e5758, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1536695094, guid: 3632ce385c84aa94a9a4eac4f39e5758, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1703307163, guid: 3632ce385c84aa94a9a4eac4f39e5758, type: 3}
       propertyPath: m_AnchorMax.x

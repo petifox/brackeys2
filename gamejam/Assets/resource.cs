@@ -6,9 +6,10 @@ using UnityEngine.Events;
 public class resource : destructable
 {
     public UnityEvent onDestruct;
+    public int amountToAdd = 1;
     public override void destruct()
     {
-        //add objects
+        ResourceCounter.instance.Add(amountToAdd);
         onDestruct.Invoke();
         Destroy(gameObject);
     }

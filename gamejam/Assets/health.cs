@@ -8,6 +8,7 @@ using UnityEngine.Audio;
 
 public class health : MonoBehaviour
 {
+    [HideInInspector] public static health instance;
     public Slider _slider;
     float _health;
 
@@ -25,6 +26,7 @@ public class health : MonoBehaviour
     public UnityEvent onDie;
     private void Start()
     {
+        instance = this;
         _health = MinMaxHealth.y;
         _slider.minValue = MinMaxHealth.x;
         _slider.maxValue = MinMaxHealth.y;

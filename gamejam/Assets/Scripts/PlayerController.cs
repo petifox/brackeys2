@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [HideInInspector] public static PlayerController instance;
+
     [Header("Input Settings")]
     [SerializeField] private string horizontalInputName = "Horizontal";
     [SerializeField] private string verticalInputName = "Vertical";
@@ -48,9 +50,13 @@ public class PlayerController : MonoBehaviour
     private float timePassed;
     private bool isAttacking = false;
 
+    public int cost;
+    public bool isStoped;
+
 
     private void Awake()
     {
+        instance = this;
         controller = GetComponent<CharacterController>();
         mainCamera = Camera.main;
         weapon = GetComponentInChildren<sword>().gameObject;
@@ -60,6 +66,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isStoped)
+            return;
+
         AdjustGravity();
         HandlePause();
         if (isPaused)
@@ -70,6 +79,7 @@ public class PlayerController : MonoBehaviour
         RotatePlayer();
         HandleAttackMode();
         HandleAttack();
+        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
     }
 
     private void LateUpdate()
@@ -180,7 +190,7 @@ public class PlayerController : MonoBehaviour
         bool keyPressed = true;
         if (Input.GetKeyDown(meleeAttack))
         {
-            attackMode = AttackMode.Melee;
+            attackMode = AttackMode.Build;
         }
         else if (Input.GetKeyDown(buildAttack))
         {
@@ -188,6 +198,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
+            attackMode = AttackMode.Build;
             keyPressed = false;
         }
 
@@ -224,7 +235,15 @@ public class PlayerController : MonoBehaviour
 
     private void PlaceBuilding()
     {
-        Instantiate(placeholderBuilding, placePosition.position, Quaternion.identity);
+        if(ResourceCounter.instance.CheckAmount() >= cost)
+        {
+            ResourceCounter.instance.Remove(cost);
+            Instantiate(placeholderBuilding, placePosition.position, Quaternion.identity);
+        }
+        else
+        {
+            fade.instance.Notify();
+        }
     }
 
     private void HandlePause()

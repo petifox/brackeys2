@@ -19,7 +19,7 @@ public class spawner : MonoBehaviour
         if(Time.time > _time)
         {
             _time = +Time.time + max;
-            for (int i = 0; i < Time.time / 4; i++)
+            for (int i = 0; i < Time.time / 8; i++)
             {
                 transform.rotation = Quaternion.Euler(0, Random.Range(0, 360), 0);
                 Instantiate(_object, point.position, point.rotation, _parent);

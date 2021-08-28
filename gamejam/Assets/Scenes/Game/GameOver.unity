@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.96739495, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -523,6 +523,245 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1605620328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1605620330}
+  - component: {fileID: 1605620329}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1605620329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605620328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ea350f5c269d1e409808fb3659e776e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Music
+    Clip: {fileID: 8300000, guid: 08391edb73907a04f8771048ff171f94, type: 3}
+    volume: 0.8
+    pitch: 1
+    spatialBlend: 0
+    loop: 1
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 1
+    mixer: {fileID: 8459506345211658802, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: pop0
+    Clip: {fileID: 8300000, guid: 5c1841b8d361a7644ab4ad3a8cbf17f9, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: pop1
+    Clip: {fileID: 8300000, guid: 27a8457234c8c52469598df4d5ecf634, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: pop2
+    Clip: {fileID: 8300000, guid: 214936c3d5d7c5940821dcf0938e78f2, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: pop3
+    Clip: {fileID: 8300000, guid: e22579123d8231f4fa84183eaa8d23eb, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: pop4
+    Clip: {fileID: 8300000, guid: d9d7935c53e821543b793c9d7d45bcbf, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: punch0
+    Clip: {fileID: 8300000, guid: cd0d6048bedfdf8498b453f5040510b7, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: punch1
+    Clip: {fileID: 8300000, guid: 2ddd502bc5e8ddd4684dfe3c13974f95, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: punch2
+    Clip: {fileID: 8300000, guid: 8baf9b59749f8ab4b8a761599969bbad, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: punch3
+    Clip: {fileID: 8300000, guid: 1e61a71e83e6a5748b987bab9b3a2235, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: punch4
+    Clip: {fileID: 8300000, guid: 57bf6a78860417a4094c38fc8d6019eb, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 0
+    mixer: {fileID: 197877366416839301, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+  - name: Defeat
+    Clip: {fileID: 8300000, guid: b89a6e94dbde4314ab7c17e2bd743925, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    isPlaying: 0
+    source: {fileID: 0}
+    dontStop: 1
+    mixer: {fileID: 8459506345211658802, guid: 43455edb83d3b8f478a3607a6c9e3a1c, type: 2}
+--- !u!4 &1605620330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1605620328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 851.55536, y: 798.0999, z: -345.26538}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1657491609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1657491610}
+  - component: {fileID: 1657491612}
+  - component: {fileID: 1657491611}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1657491610
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657491609}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3534485158839015793}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0017089844, y: -1.1135864}
+  m_SizeDelta: {x: 2153.9, y: 1314.957}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1657491611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657491609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ac2226f3c05a6af4dabbd97e06a98796, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1657491612
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657491609}
+  m_CullTransparentMesh: 1
 --- !u!1 &1725071741
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +873,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 1657491610}
   - {fileID: 3534485159568037813}
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -789,7 +1029,7 @@ RectTransform:
   m_Children:
   - {fileID: 3534485159896776025}
   m_Father: {fileID: 3534485158839015793}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -850,9 +1090,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 1725071743}
-  scoreText: 'SCORE: {0}'
+  scoreText: 'SCORE: {0} BITS'
   bestScore: {fileID: 513577890}
-  bestScoreText: 'BEST SCORE: {0}'
+  bestScoreText: 'BEST SCORE: {0} BITS'
 --- !u!114 &3534485160305488946
 MonoBehaviour:
   m_ObjectHideFlags: 0

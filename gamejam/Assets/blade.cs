@@ -6,6 +6,7 @@ public class blade : destructable
 {
     float startTime;
     public float delay;
+    public int amountToAdd = 1;
     private void OnEnable()
     {
         startTime = Time.time;
@@ -15,6 +16,7 @@ public class blade : destructable
         if(startTime + delay < Time.time)
         {
             Destroy(gameObject);
+            ResourceCounter.instance.Add(amountToAdd);
         }
     }
 

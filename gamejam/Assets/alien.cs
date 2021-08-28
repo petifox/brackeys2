@@ -13,9 +13,12 @@ public class alien : destructable
     [Tag] public string ShipTag;
     GameObject _obj;
     public float speed;
+    public string PopName = "pop";
+    public string PunchName = "punch";
     public override void destruct()
     {
         ResourceCounter.instance.Add(amountToAdd);
+        AudioManager.instance.Play(PopName + Random.Range(0, 5).ToString());
         onDestruct.Invoke();
         Destroy(gameObject);
     }
@@ -32,6 +35,7 @@ public class alien : destructable
     {
         if(collision.gameObject.tag == ShipTag)
         {
+            AudioManager.instance.Play(PunchName + Random.Range(0, 5).ToString());
             health.instance.Damage(damageAmount);
             onDestruct.Invoke();
             Destroy(gameObject);

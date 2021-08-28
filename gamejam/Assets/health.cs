@@ -42,9 +42,15 @@ public class health : MonoBehaviour
 
         _mixer.SetFloat(_volumeParameter, Mathf.Lerp(MinMaxHZ.x, MinMaxHZ.y, multiplyer.Evaluate(_health / 100)));
 
-        Debug.Log(MinMaxHZ + " " + _health / 100);
+        //Debug.Log(MinMaxHZ + " " + _health / 100);
         if (_health <= MinMaxHealth.x)
         {
+            PlayerPrefs.SetInt("latest", ResourceCounter.instance.CheckAmount());
+            if(ResourceCounter.instance.CheckAmount() > PlayerPrefs.GetInt("highScore"))
+            {
+                PlayerPrefs.SetInt("highScore", ResourceCounter.instance.CheckAmount());
+            }
+            AudioManager.instance.Play("Defeat");
             onDie.Invoke();
         }
     }
@@ -54,5 +60,9 @@ public class health : MonoBehaviour
         {
             Damage(10);
         }
+    }
+    public void SetDefault()
+    {
+        _mixer.SetFloat(_volumeParameter, MinMaxHZ.y);
     }
 }

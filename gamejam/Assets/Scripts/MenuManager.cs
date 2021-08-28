@@ -61,6 +61,12 @@ public class MenuManager : MonoBehaviour
     /// <param name="BuildIndex"></param>
     public void LoadScene(int BuildIndex)
     {
+        if(health.instance != null)
+            health.instance.SetDefault();
+
+        if (AudioManager.instance != null)
+            AudioManager.instance.StopAll();
+
         SceneManager.LoadScene(BuildIndex);
     }
 
@@ -70,6 +76,13 @@ public class MenuManager : MonoBehaviour
     /// <param name="name"></param>
     public void LoadScene(string name)
     {
+        if (health.instance != null)
+            health.instance.SetDefault();
+
+        if (AudioManager.instance != null)
+            AudioManager.instance.StopAll();
+
+        AudioManager.instance.StopAll();
         SceneManager.LoadScene(name);
     }
     /// <summary>

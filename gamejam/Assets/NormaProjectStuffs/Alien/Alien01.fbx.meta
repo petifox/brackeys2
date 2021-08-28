@@ -1,14 +1,20 @@
 fileFormatVersion: 2
-guid: cef36848f3d40154fbd33586279e3e94
+guid: 3cb784ac27d19e14ba9277def68e27df
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
-      74: -1332109805818081118
-    second: Character|PlayerRun
+      74: -8453434371287932274
+    second: AlienRun
   - first:
-      74: 8561263300818181275
-    second: Character|TreeAction
+      74: -2400843399570046557
+    second: Alien|AlienRun
+  - first:
+      74: -7854838530489261284
+    second: Alien|Plane.007Action
+  - first:
+      74: 3106425776309665227
+    second: Alien|TreeAction
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -18,7 +24,7 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleCurves: 0
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
@@ -38,11 +44,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Character|PlayerRun
-      takeName: Character|PlayerRun
+      name: AlienRun
+      takeName: AlienRun
       internalID: 0
       firstFrame: 20
-      lastFrame: 100
+      lastFrame: 120
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -67,8 +73,66 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Character|TreeAction
-      takeName: Character|TreeAction
+      name: Alien|AlienRun
+      takeName: Alien|AlienRun
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Alien|Plane.007Action
+      takeName: Alien|Plane.007Action
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Alien|TreeAction
+      takeName: Alien|TreeAction
       internalID: 0
       firstFrame: 0
       lastFrame: 1
